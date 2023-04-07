@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+mongoose.set("strictQuery", true);
 
 const connetToDB = () => {
     mongoose.connect(process.env.DB_CASA, {
