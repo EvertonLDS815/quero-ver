@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+mongoose.set("strictQuery", true);
 
 const loginSchema = new mongoose.Schema({
     name: {
